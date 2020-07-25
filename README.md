@@ -1,2 +1,2 @@
 # Web-mini-project
-It is a Gym management System developed using html css php and js
+It is a Gym management System developed using html css php 
