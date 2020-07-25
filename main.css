@@ -1,0 +1,107 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    border-top: 6px solid #e6af2e;
+    background-color: black;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #e6af2e;
+    padding: 15px 20px;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: white;
+}
+
+.logo {
+    background: #e6af2e;
+    color: black;
+    display: flex;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 40px;
+    justify-content: space-between;
+}
+
+
+/*.logo :hover 
+{
+    background-color: blanchedalmond;
+    color: ;
+}*/
+
+@media screen and (min-width:576px) {
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+}
+
+nav ul li {
+    flex: 1 0 auto
+}
+
+
+/*banner*/
+
+#banner {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/barbell-building-challenge-1552252.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-title {
+    display: block;
+    font-size: 40px;
+    color: white;
+    font-style: italic;
+}
+
+
+/*.banner-underline
+ {
+    width: 20rem;
+    border: 3px solid black;
+    margin: 10px auto 20px auto;
+}*/
+
+.banner-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-btn button {
+    font-size: 40px;
+    padding: 15px;
+    margin: 13px 10px;
+    background: transparent;
+    border: 2px solid #e6af2e;
+    color: #e6af2e;
+}
+
+.banner-btn button:hover {
+    color: white;
+    background: #e6af2e;
+}

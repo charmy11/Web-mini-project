@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="admin.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script>
+        function validate() {
+            var user = document.getElementById("user_name").value;
+            var pass = document.getElementById("password").value;
+            //if (username == "")
+            //   document.getElementById("error").innerHTML = "PLease enter Username and password";
+            // return false;
+            if (user == "charmi") {
+                if (pass == "123") {
+                    document.getElementById("success").innerHTML = "Login succeful";
+                    return true;
+                } else {
+                    document.getElementById("error").innerHTML = "Invalid password";
+                    return false;
+                }
+            } else {
+                document.getElementById("error").innerHTML = "Invalid username";
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="loginbox">
+        <img src="images/download.png" class="avatar">
+        <h1>Login here</h1>
+        <form onsubmit="return validate()" action="admin_control.html">
+            <p>Username</p>
+            <input type="text" name="" placeholder="Enter Username" id="user_name" value="">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Enter Password" id="password" value="">
+            <input type="submit" name="" value="Login">
+            <p id="error"></p>
+            <p id="success"></p>
+        </form>
+    </div>
+</body>
+
+</html>
